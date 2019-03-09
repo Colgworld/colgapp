@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { Button } from "reactstrap";
 
 class Landing extends Component {
   render() {
@@ -18,7 +19,7 @@ class Landing extends Component {
             </p>
             <br />
             <div className="col s6">
-              <Link
+              <Button
                 to="/register"
                 style={{
                   width: "140px",
@@ -28,11 +29,11 @@ class Landing extends Component {
                 className="btn btn-large waves-effect waves-light hoverable blue accent-3"
               >
                 Register
-              </Link>
+              </Button>
             </div>
             <div className="col s6">
-              <Link
-                to="/login"
+              <Button
+                onClick="/login"
                 style={{
                   width: "140px",
                   borderRadius: "3px",
@@ -41,7 +42,7 @@ class Landing extends Component {
                 className="btn btn-large btn-flat waves-effect white black-text"
               >
                 Log In
-              </Link>
+              </Button>
             </div>
           </div>
         </div>
