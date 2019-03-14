@@ -40,7 +40,11 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
+<<<<<<< HEAD
           <div className="app">
+=======
+          <div className="App">
+>>>>>>> 16eaeee07a16966526e54b5ba51d9da48a905535
             <Navigation />
             <Route exact path="/" component={Landing} />
             <Route exact path="/register" component={Register} />
